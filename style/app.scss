@@ -1,0 +1,73 @@
+@use "./banner-hero";
+@use "./main";
+@use "./footer";
+
+:root {
+  font-size: 62.5%;
+
+  // colors
+  --purple-light: #D7D4FF;
+  --purple: #6C63FF;
+
+  --white-200: #F9F9F9;
+
+  --gray-light: #6e7275bd;
+  --gray: #555555;
+  --gray-dark: #2B2B2B;
+}
+
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  margin-inline: auto;
+  // border: 1px solid red;
+
+  max-width: 375px;
+  width: 90%;
+}
+
+h1,
+h2 {
+  color: var(--gray-dark);
+
+  font-family: 'Merriweather', serif;
+}
+
+p {
+  color: var(--gray);
+
+  font-family: 'Lato', sans-serif;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+
+  color: white;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+
+  background-color: var(--purple);
+
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+}
+
+// 
+
+@media (min-width: 1440px) {
+ .wrapper {
+  max-width: 1242px;
+ } 
+}

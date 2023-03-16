@@ -1,0 +1,204 @@
+#banner-hero {
+  padding-block: 55px 88px;
+  background-color: var(--purple-light);
+}
+#banner-hero .wrapper {
+  display: grid;
+  row-gap: 114px;
+}
+#banner-hero .wrapper > div h1 {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4.7rem;
+}
+#banner-hero .wrapper > div p {
+  margin-block: 18px 32px;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+#banner-hero .wrapper > div button {
+  padding: 14px 50px;
+}
+#banner-hero .wrapper img {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  #banner-hero {
+    padding-top: 78px;
+  }
+  #banner-hero .wrapper {
+    display: flex;
+    align-items: end;
+    -moz-column-gap: 347px;
+         column-gap: 347px;
+  }
+  #banner-hero .wrapper > div h1 {
+    font-size: 3.6rem;
+  }
+  #banner-hero .wrapper > div p {
+    margin-bottom: 45px;
+    font-size: 1.9rem;
+  }
+}
+main {
+  padding-block: 75px;
+}
+main .wrapper {
+  display: grid;
+  gap: 30px;
+}
+main .wrapper .card {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+main .wrapper .card div:first-child {
+  height: 222px;
+}
+main .wrapper .card div:last-child {
+  padding: 24px 31px 31px 33px;
+  display: grid;
+  row-gap: 26px;
+}
+main .wrapper .card div:last-child h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+main .wrapper .card div:last-child p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+@media (min-width: 1440px) {
+  main {
+    padding-block: 151px;
+  }
+  main .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 68px;
+  }
+  main .wrapper .card {
+    max-width: 340px;
+  }
+}
+footer {
+  padding-block: 88px 55px;
+  background-color: var(--purple-light);
+}
+footer .wrapper form h2 {
+  margin-bottom: 3.6rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+footer .wrapper form input,
+footer .wrapper form textarea {
+  display: block;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 20px 0px 20px 11px;
+  font-size: 1.8rem;
+}
+footer .wrapper form input::-moz-placeholder, footer .wrapper form textarea::-moz-placeholder {
+  color: var(--gray-light);
+  font-family: "Lato", sans-serif;
+  font-weight: 400px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+footer .wrapper form input::placeholder,
+footer .wrapper form textarea::placeholder {
+  color: var(--gray-light);
+  font-family: "Lato", sans-serif;
+  font-weight: 400px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+footer .wrapper form textarea {
+  margin-bottom: 45px;
+}
+footer .wrapper form button {
+  width: 100%;
+  padding-block: 14px;
+}
+
+@media (min-width: 1440px) {
+  footer {
+    padding-bottom: 78px;
+  }
+  footer .wrapper form {
+    margin-inline: auto;
+    max-width: 470px;
+  }
+  footer .wrapper form h2 {
+    margin-bottom: 60px;
+  }
+  footer .wrapper form input,
+  footer .wrapper form textarea {
+    padding: 22px 0px 22px 15px;
+    margin-bottom: 15px;
+  }
+  footer .wrapper form textarea {
+    margin-bottom: 30px;
+  }
+}
+:root {
+  font-size: 62.5%;
+  --purple-light: #D7D4FF;
+  --purple: #6C63FF;
+  --white-200: #F9F9F9;
+  --gray-light: #6e7275bd;
+  --gray: #555555;
+  --gray-dark: #2B2B2B;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  margin-inline: auto;
+  max-width: 375px;
+  width: 90%;
+}
+
+h1,
+h2 {
+  color: var(--gray-dark);
+  font-family: "Merriweather", serif;
+}
+
+p {
+  color: var(--gray);
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  background-color: var(--purple);
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+}
+
+@media (min-width: 1440px) {
+  .wrapper {
+    max-width: 1242px;
+  }
+}/*# sourceMappingURL=app.css.map */
